@@ -1,6 +1,6 @@
 # CPSC1517 Fall 2023 Term Workbook
 
-## Susahnt Khanal
+## Sushant Khanal
 
 ## SushiFiwh
 
