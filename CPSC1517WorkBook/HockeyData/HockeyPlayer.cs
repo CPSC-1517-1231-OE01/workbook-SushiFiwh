@@ -12,12 +12,65 @@ namespace Hockey.Data
         private int _heightInInches;
         private int _weightInPounds;
 
-        private Position _position;
-        private Shot _shot;
 
+        public string BirthPlace;
+        {
+            get
+            {
+                return _birthPlace;
+            }
 
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("Birth place cannot be null or empty.");
+                }
+                _birthPlace = value;
+            }
+        }
 
-        // properties
+        public string BirthPlace;
+        {
+            get
+            {
+                return _birthPlace;
+            }
+
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("Birth place cannot be null or empty.");
+                }
+                _birthPlace = value;
+            }
+        }
+
+        public int HeightInInches
+        {
+            get
+            {
+                return _heightInInches;
+            }
+
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Height must be positive.");
+                }
+
+                _heightInInches = value;
+            }
+        }
+        public DateOnly DateOfBirth
+        {
+            get
+            {
+                return _dateOfBirth;
+            }
+
 
         // constructors
     }
