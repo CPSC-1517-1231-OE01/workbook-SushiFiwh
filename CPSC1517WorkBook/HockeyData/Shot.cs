@@ -1,4 +1,4 @@
-﻿namespace HockeyData
+﻿namespace Hockey.Data
 {
     /// <summary>
     /// Represents the shot hand for a hockey player
@@ -6,6 +6,6 @@
     public enum Shot
     {
         Left = 1,
-        Right
+        Right,
     }
 }
